@@ -30,9 +30,9 @@ services:
   frontend:
     build: 
       context: .
-      dockerfile: frontend/Dockerfile
+      dockerfile: ./frontend/Dockerfile
     ports:
-      - "3000:80"  # Port 3000 is mapped for frontend access
+      - "80:80"  # Port 3000 is mapped for frontend access
     depends_on:
       - backend
     networks:
